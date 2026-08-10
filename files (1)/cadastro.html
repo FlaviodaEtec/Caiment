@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pré-cadastro — CAIMENT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    .cadastro-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, var(--navy) 0%, var(--plum) 100%);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .cadastro-page::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(179,255,121,0.12) 0%, transparent 70%);
+      top: -100px; right: -100px;
+      pointer-events: none;
+    }
+    .form-card {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 3.5rem 3rem;
+      max-width: 520px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.3);
+    }
+    .form-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--slate);
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+    .form-back:hover { color: var(--violet); }
+    .form-card .section-tag { margin-bottom: 0.8rem; }
+    .form-card .section-title { font-size: 2rem; margin-bottom: 0.5rem; }
+    .form-desc {
+      font-size: 0.92rem;
+      color: var(--slate);
+      line-height: 1.6;
+      margin-bottom: 2.2rem;
+    }
+    .form-group {
+      margin-bottom: 1.3rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--plum);
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.04em;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      border: 1.5px solid rgba(64, 43, 71, 0.18);
+      border-radius: 12px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--dark);
+      background: var(--white);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--violet);
+      box-shadow: 0 0 0 3px rgba(146, 84, 225, 0.12);
+    }
+    .form-group input::placeholder { color: #bbb; }
+    .btn-submit {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      background: var(--lime);
+      color: var(--dark);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 1rem;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.02em;
+      transition: all 0.25s;
+      margin-top: 0.5rem;
+      box-shadow: 0 6px 24px rgba(179, 255, 121, 0.35);
+    }
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(179, 255, 121, 0.5);
+    }
+    .form-note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: #bbb;
+      margin-top: 1.2rem;
+    }
+    .success-msg {
+      display: none;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .success-msg .big-icon { font-size: 3.5rem; margin-bottom: 1rem; }
+    .success-msg h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--plum);
+      margin-bottom: 0.6rem;
+    }
+    .success-msg p {
+      font-size: 0.95rem;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+    @media (max-width: 560px) {
+      .form-card { padding: 2.5rem 1.5rem; border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar simples -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">CAIMENT</a>
+    <ul class="nav-links">
+      <li><a href="index.html">← Voltar ao site</a></li>
+    </ul>
+  </nav>
+
+  <main class="cadastro-page">
+    <div class="form-card">
+      <a href="index.html" class="form-back">← Voltar</a>
+
+      <div id="form-section">
+        <div class="section-tag accent-purple">Acesso Antecipado</div>
+        <h1 class="section-title">Pré-cadastro <span>CAIMENT</span></h1>
+        <p class="form-desc">
+          Registre-se agora e garanta seu lugar. Quando o app for lançado, você já estará pronto para usar antes de todo mundo.
+        </p>
+
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" placeholder="Seu nome" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">WhatsApp (opcional)</label>
+          <input type="tel" id="telefone" placeholder="(11) 99999-9999" />
+        </div>
+
+        <div class="form-group">
+          <label for="interesse">Principal interesse</label>
+          <select id="interesse">
+            <option value="" disabled selected>Selecione...</option>
+            <option>Experimentar roupas virtualmente</option>
+            <option>Comprar sem errar o tamanho</option>
+            <option>Descobrir novos looks</option>
+            <option>Integrar ao meu e-commerce</option>
+            <option>Outro</option>
+          </select>
+        </div>
+
+        <button class="btn-submit" id="btn-submit">
+          Garantir meu pré-cadastro
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note">Gratuito · Sem spam · Você pode cancelar quando quiser</p>
+      </div>
+
+      <!-- Mensagem de sucesso -->
+      <div class="success-msg" id="success-msg">
+        <div class="big-icon">✦</div>
+        <h3>Você está na lista!</h3>
+        <p>Obrigado pelo interesse no CAIMENT.<br>Te avisaremos assim que o app estiver disponível.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('btn-submit').addEventListener('click', () => {
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!nome || !email) {
+        alert('Por favor, preencha pelo menos seu nome e e-mail.');
+        return;
+      }
+      document.getElementById('form-section').style.display = 'none';
+      document.getElementById('success-msg').style.display = 'block';
+    });
+
+    // Navbar scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 30);
+    });
+  </script>
+</body>
+</html>
