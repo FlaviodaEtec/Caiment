@@ -1,38 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAIMENT — Provador Virtual</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caiment</title>
+
 </head>
 <body>
-
-  <!-- ───────── NAVBAR ───────── -->
-  <nav class="navbar" id="navbar">
+  <!--NAV-->
+    <nav class="navbar" id="navbar">
     <div class="nav-logo">CAIMENT</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#quem-somos">Quem Somos</a></li>
+      <li><a href="#teste">Experimente</a></li>
       <li><a href="#cadastro" class="nav-cta">Pré-cadastro</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
-
-  <!-- ───────── HERO ───────── -->
+  <!--NAV-->
+  <!--Tela inicial-->
   <section class="hero" id="home">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="sparkle s1">✦</div>
-      <div class="sparkle s2">✦</div>
-      <div class="sparkle s3">✦</div>
-    </div>
-
     <div class="hero-content">
       <div class="hero-text">
         <span class="hero-label">O futuro da moda chegou</span>
@@ -40,154 +32,96 @@
         <p class="hero-sub">Experimente roupas no nosso provador virtual com IA e modelagem 3D — sem sair de casa.</p>
         <a href="#cadastro" class="btn-primary">Get Started</a>
       </div>
-
-      <div class="hero-visual">
-        <div class="avatar-stage">
-          <div class="avatar-glow"></div>
-          <div class="avatar-figure">
-            <!-- Silhueta SVG do manequim -->
-            <svg viewBox="0 0 160 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="mannequin-svg">
-              <!-- Cabeça -->
-              <ellipse cx="80" cy="34" rx="22" ry="26" fill="#262423"/>
-              <!-- Pescoço -->
-              <rect x="71" y="56" width="18" height="16" rx="4" fill="#262423"/>
-              <!-- Torso -->
-              <path d="M38 72 Q30 90 28 130 L132 130 Q130 90 122 72 Q100 62 80 62 Q60 62 38 72Z" fill="#262423"/>
-              <!-- Braço esquerdo -->
-              <path d="M30 78 Q10 100 8 148 Q14 152 24 148 Q32 110 44 90Z" fill="#262423"/>
-              <!-- Mão esq -->
-              <ellipse cx="14" cy="152" rx="8" ry="10" fill="#262423" transform="rotate(-10 14 152)"/>
-              <!-- Braço direito (levantado) -->
-              <path d="M130 78 Q148 56 155 30 Q148 24 140 28 Q130 52 116 88Z" fill="#262423"/>
-              <!-- Mão dir -->
-              <ellipse cx="152" cy="26" rx="8" ry="10" fill="#262423" transform="rotate(20 152 26)"/>
-              <!-- Cintura -->
-              <rect x="38" y="128" width="84" height="18" rx="6" fill="#262423"/>
-              <!-- Perna esquerda -->
-              <path d="M44 144 Q36 200 34 280 Q44 286 56 282 Q60 210 66 150Z" fill="#262423"/>
-              <!-- Perna direita -->
-              <path d="M116 144 Q124 200 126 280 Q116 286 104 282 Q100 210 94 150Z" fill="#262423"/>
-              <!-- Pés -->
-              <ellipse cx="44" cy="284" rx="14" ry="8" fill="#262423"/>
-              <ellipse cx="116" cy="284" rx="14" ry="8" fill="#262423"/>
-              <!-- Seta indicando roupa -->
-              <path d="M-10 160 Q20 170 50 155" stroke="#262423" stroke-width="3" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
-              <defs>
-                <marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
-                  <path d="M0,0 L8,4 L0,8 Z" fill="#262423"/>
-                </marker>
-              </defs>
-            </svg>
-          </div>
-          <div class="avatar-platform"></div>
-        </div>
-        <div class="badge-float badge-ai">IA</div>
-        <div class="badge-float badge-3d">3D</div>
-      </div>
     </div>
-
-    <div class="scroll-hint">↓</div>
   </section>
-
-  <!-- ───────── SOBRE O PROJETO ───────── -->
+  <!--Tela inicial-->
+  <!--Sobre o projeto-->
   <section class="section sobre" id="sobre">
     <div class="container">
-      <div class="section-tag">O Projeto</div>
-      <h2 class="section-title">O que é o <span>CAIMENT?</span></h2>
-      <div class="sobre-grid">
-        <div class="sobre-text">
-          <p>
-            <!-- ESPAÇO PARA SEU TEXTO -->
-            Escreva aqui sobre o projeto CAIMENT. Conte a visão, o problema que ele resolve, e o que torna essa solução única no mercado de moda e tecnologia.
-          </p>
-          <p>
-            <!-- ESPAÇO PARA SEU TEXTO -->
-            Adicione mais detalhes sobre a tecnologia de IA utilizada, como funciona a modelagem 3D, e qual é a experiência do usuário ao usar o provador virtual.
-          </p>
-        </div>
-        <div class="sobre-cards">
-          <div class="feature-card">
-            <div class="card-icon">🤖</div>
-            <h3>Inteligência Artificial</h3>
-            <p><!-- Descreva como a IA analisa e projeta as roupas --></p>
-          </div>
-          <div class="feature-card">
-            <div class="card-icon">🧊</div>
-            <h3>Modelagem 3D</h3>
-            <p><!-- Descreva a tecnologia de modelagem tridimensional --></p>
-          </div>
-          <div class="feature-card">
-            <div class="card-icon">👗</div>
-            <h3>Provador Virtual</h3>
-            <p><!-- Descreva a experiência do provador --></p>
-          </div>
-        </div>
+      <div class="section-tag">O Projeto</div> <!--section-tag: definor o formato, mini tag que é menor do que o titulo,-->
+      <h2 class="section-title">O que é oCAIMENT?</h2>
+      <div class="sobre-text">
+        <p>
+          O Caiment é uma plataforma de provador virtual desenvolvida para transformar a experiência de compra de roupas pela internet. Utilizando Inteligência Artificial e modelagem 3D, a solução permite que os consumidores visualizem como uma peça ficará em seu corpo antes de finalizar a compra.
+        </p> <!--achatar o texto e dimencionar a imagem do lado-->
+        <img src="imagens/foto.jpg" alt="Mascote Caiment">
+        <!--robo a gih vai mandar a imagem-->
       </div>
     </div>
   </section>
-
-  <!-- ───────── QUEM SOMOS ───────── -->
+  <!--Sobre o projeto-->
+  <!--Sobre nos-->
   <section class="section quem-somos" id="quem-somos">
     <div class="container">
       <div class="section-tag accent-green">Nossa Equipe</div>
-      <h2 class="section-title">Quem <span>Somos Nós?</span></h2>
+      <h2 class="section-title">Quem<span>Somos Nós?</span></h2>
       <div class="quem-intro">
         <p>
-          <!-- ESPAÇO PARA SEU TEXTO -->
           Apresente aqui quem são os criadores do CAIMENT. Fale sobre a equipe, suas origens, formações e o que os une em torno desse projeto.
-        </p>
-        <p>
-          <!-- ESPAÇO PARA SEU TEXTO -->
-          Conte o porquê desse projeto existir — qual foi a motivação, o problema vivido no dia a dia que inspirou a criação do CAIMENT.
         </p>
       </div>
 
       <div class="team-grid">
-        <!-- Repita esse bloco para cada membro da equipe -->
-        <div class="team-card">
-          <div class="team-avatar"><!-- foto ou inicial --></div>
-          <h4>Nome do Membro</h4>
-          <span>Função / Cargo</span>
+        <div class="team-card"> <!--team-card {
+  flex: 1;
+  min-width: 180px;
+  max-width: 240px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1.5px solid rgba(64, 43, 71, 0.10);
+  transition: all 0.25s;-->
+          <div class="team-avatar"></div> <!--coloque o "class="team-avatar" como redondo e a imagem como backgrond, ou como <img src="imag. . . -->
+          <h4>Ana Julia S. Marques</h4>
+          <span>Lider do projeto; Programadora</span>
         </div>
         <div class="team-card">
           <div class="team-avatar"></div>
-          <h4>Nome do Membro</h4>
-          <span>Função / Cargo</span>
+          <h4>Christian L. de Souza</h4>
+          <span>Programador</span>
         </div>
-        <div class="team-card">
-          <div class="team-avatar"></div>
-          <h4>Nome do Membro</h4>
-          <span>Função / Cargo</span>
+        <div class="team-card"> 
+          <div class="team-avatar"></div> 
+          <h4>Emanuelly A. L. Santos </h4>
+          <span>Designer</span>
+        </div>
+        <div class="team-card"> 
+          <div class="team-avatar"></div> 
+          <h4>Flavio R. da Silva </h4>
+          <span>Processos de documentalção</span>
+        </div>
+        <div class="team-card"> 
+          <div class="team-avatar"></div> 
+          <h4>Giovanna S. Lima </h4>
+          <span>Processos de documentalção</span>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- ───────── PRÉ-CADASTRO ───────── -->
+  <!--Sobre nos-->
+  <!--experimente teste-->
+  <section class="experimentar" id="teste">
+  </section> 
+  <!--experimente teste-->
+  <!--Contato com a equipe-->
   <section class="section cadastro" id="cadastro">
     <div class="container cadastro-inner">
-      <div class="sparkle s4">✦</div>
-      <div class="sparkle s5">✦</div>
-      <div class="section-tag accent-purple">Seja o Primeiro</div>
-      <h2 class="section-title">Quer usar o CAIMENT<br><span>antes de todo mundo?</span></h2>
+      <h2 class="section-title">Eii loja ! quer aderir ao sistema Caiment<br><span>Contate-nos</span></h2>
       <p class="cadastro-sub">
-        Faça seu pré-cadastro agora e garanta seu lugar na fila. Quando o app for lançado, você já estará dentro.
+       clique no icone e entre em contato
       </p>
-      <a href="cadastro.html" class="btn-cta-grande">
-        <span>Quero me pré-cadastrar</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <p class="cadastro-note">Gratuito · Sem compromisso · Acesso antecipado garantido</p>
     </div>
   </section>
-
-  <!-- ───────── FOOTER ───────── -->
-  <footer class="footer">
+  <!--Contato com a equipe-->
+  <!--footer-->
+   <footer class="footer">
     <div class="container footer-inner">
       <span class="footer-logo">CAIMENT</span>
       <p>© 2025 CAIMENT. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <!--footer-->
 
   <script src="script.js"></script>
 </body>
