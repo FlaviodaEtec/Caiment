@@ -5,7 +5,7 @@
 ───────────────────────────────────────── */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap');
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -19,17 +19,18 @@
   --lime:       #b3ff79;
   --white:      #f8f6f2;
   --font-display: 'Playfair Display', serif;
-  --font-body:    'DM Sans', sans-serif;
+  --font-body: 'Nunito', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--white);
+  background-color: var(--white); 
   color: var(--dark);
   overflow-x: hidden;
 }
+
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
@@ -42,27 +43,28 @@ ul { list-style: none; }
 
 /* ── NAVBAR ── */
 .navbar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.1rem 3rem;
-  background: rgba(248, 246, 242, 0.85);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(64, 43, 71, 0.08);
-  transition: box-shadow 0.3s;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+    background: rgb(248 246 242 / 85%);
+    border-bottom: 1px solid rgb(64 43 71 / 8%);
 }
 
 .navbar.scrolled { box-shadow: 0 4px 24px rgba(37, 15, 97, 0.10); }
 
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  color: var(--navy);
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 120px;
+    height: auto;
+    display: block;
 }
 
 .nav-links {
