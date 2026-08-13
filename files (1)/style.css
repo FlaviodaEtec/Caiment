@@ -82,8 +82,6 @@ ul { list-style: none; }
 .nav-cta:hover {
   background: var(--navy); }
  
-
-   
 .button22 {
     display: none;
     flex-direction: column;
@@ -131,7 +129,8 @@ ul { list-style: none; }
   align-items: center;
   justify-content: space-between;
   gap: 80px;
-  flex-direction: row-reverse; /* Inverte a ordem: imagem na esquerda, texto na direita */
+  flex-direction: row-reverse;
+  margin-left: 200px;
 }
   
 .hero-title {
@@ -140,6 +139,7 @@ ul { list-style: none; }
     font-weight: 900;
     color: var(--dark);
     margin-bottom: 22px;
+
 }
 
 .hero-content-text {
@@ -220,7 +220,6 @@ ul { list-style: none; }
 }
  
 
-/* ── QUEM SOMOS ── */
 .quem-somos {
   background: linear-gradient(160deg, #f0e8f8 0%, var(--white) 60%);
 }
@@ -229,73 +228,63 @@ ul { list-style: none; }
   max-width: 680px;
   margin-bottom: 3.5rem;
 }
- 
+
 .quem-intro p {
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 28.8px;
   color: var(--slate);
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
- 
+
 .team-grid {
   display: flex;
-  gap: 1.6rem;
+  gap: 25.6px;
   flex-wrap: wrap;
 }
- 
+
 .team-card {
   flex: 1;
-  min-width: 180px;
-  max-width: 240px;
+  min-width: 140px;
+  max-width: 200px;
   background: var(--white);
   border-radius: 20px;
-  padding: 2rem 1.5rem;
+  padding: 32px 24px;
   text-align: center;
   border: 1.5px solid rgba(64, 43, 71, 0.10);
-  transition: all 0.25s;
 }
  
 .team-card:hover {
-  transform: translateY(-6px);
   box-shadow: 0 16px 40px rgba(64, 43, 71, 0.12);
   border-color: var(--violet);
 }
- 
+
 .team-avatar {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--ice), var(--slate));
-  margin: 0 auto 1rem;
+  background: var(--ice);
+  margin: 0 auto 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: 25.6px;
   font-weight: 700;
   color: var(--white);
 }
- 
+
 .team-card h4 {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   color: var(--dark);
-  margin-bottom: 0.3rem;
+  margin-bottom: 4.8px;
 }
  
-.team-card span {
-  font-size: 0.82rem;
-  color: var(--violet);
-  font-weight: 500;
-}
- 
-/* ── CADASTRO ── */
 .cadastro {
   background: linear-gradient(145deg, var(--navy) 0%, var(--plum) 100%);
   color: var(--white);
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
  
 .cadastro .sparkle { color: var(--lime); }
@@ -307,43 +296,16 @@ ul { list-style: none; }
  
 .cadastro .section-title { color: var(--white); }
 .cadastro .section-title span { color: var(--lime); }
- 
+
 .cadastro-sub {
-  font-size: 1.05rem;
+  font-size: 16.8px;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 27.2px;
   color: rgba(248, 246, 242, 0.75);
   max-width: 540px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 48px;
 }
- 
-.btn-cta-grande {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-  background: var(--lime);
-  color: var(--dark);
-  font-size: 1.1rem;
-  font-weight: 700;
-  padding: 1rem 2.6rem;
-  border-radius: 50px;
-  letter-spacing: 0.02em;
-  transition: all 0.25s;
-  box-shadow: 0 8px 30px rgba(179, 255, 121, 0.35);
-}
- 
-.btn-cta-grande:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 14px 40px rgba(179, 255, 121, 0.5);
-}
- 
-.cadastro-note {
-  margin-top: 1.4rem;
-  font-size: 0.82rem;
-  color: rgba(248, 246, 242, 0.5);
-  letter-spacing: 0.06em;
-}
- 
+
 /* ── FOOTER ── */
 .footer {
   background: var(--dark);
