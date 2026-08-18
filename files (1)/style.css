@@ -99,7 +99,7 @@ ul { list-style: none; }
     border-radius: 2px;
 }
 .mascote-img {
-  width: 250px;
+  width: 1000px;
   height: auto;
   display: block;
 }
@@ -146,8 +146,8 @@ ul { list-style: none; }
   max-width: 520px;
   flex: 1;
   display: flex;
-  flex-direction: column; /* Alinha o título, subtítulo e botão um embaixo do outro */
-  align-items: flex-start; /* Alinha os textos à esquerda do bloco deles */
+  flex-direction: column; 
+  align-items: flex-start; 
   justify-content: center;
 }
 .hero-boneco {
@@ -306,7 +306,7 @@ ul { list-style: none; }
   margin: 0 auto 48px;
 }
 
-/* ── FOOTER ── */
+
 .footer {
   background: var(--dark);
   color: rgba(248, 246, 242, 0.5);
