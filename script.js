@@ -18,8 +18,8 @@
 ============================================================ */
  
 const CONFIG = {
-    avatar: './files(1)/Avatar CAIMENT.png',
-    calca: './files(1)/calca.png',
+    avatar: './files (1)/Avatar CAIMENT.png',
+    calca: './files (1)/calca.png',
     whatsapp: '5511999999999'
 };
    
