@@ -231,9 +231,6 @@ ul {
   margin-bottom: 1.2rem;
 }
 
-/* =========================
-   VÍDEO PITCH
-========================= */
 
 .sobre {
   background: var(--white);
@@ -246,22 +243,6 @@ ul {
   text-align: center;
 }
 
-.video-tag {
-  display: inline-block;
-  padding: 8px 18px;
-  margin-bottom: 18px;
-
-  border: 1px solid rgba(146, 84, 225, 0.35);
-  border-radius: 50px;
-
-  color: var(--purple);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-
-  background: rgba(146, 84, 225, 0.06);
-}
-
 .video-header .section-title {
   margin-bottom: 20px;
 }
@@ -269,10 +250,8 @@ ul {
 .video-header h3 {
   max-width: 700px;
   margin: 0 auto 15px;
-
   font-size: clamp(20px, 2.5vw, 28px);
   line-height: 1.4;
-
   color: var(--dark);
 }
 
@@ -285,8 +264,6 @@ ul {
   line-height: 1.7;
 }
 
-
-
 .video-wrapper {
   position: relative;
   max-width: 1000px;
@@ -296,15 +273,9 @@ ul {
 .video-card {
   position: relative;
   z-index: 1;
-
   padding: 10px;
-
   border-radius: 24px;
-
-  background: linear-gradient(
-    145deg,
-    #402b47,
-    #250f61
+  background: var(--plum)
   );
 
   box-shadow:
@@ -346,33 +317,24 @@ ul {
 
 .video-label {
   color: rgba(255,255,255,0.65);
-
   font-size: 0.65rem;
   font-weight: 700;
-
   letter-spacing: 1.5px;
 }
 
 .video-container {
   position: relative;
-
   width: 100%;
-
   aspect-ratio: 16 / 9;
-
   overflow: hidden;
-
   border-radius: 17px;
-
   background: #030308;
 }
 
 .video-container iframe {
   width: 100%;
   height: 100%;
-
   border: none;
-
   display: block;
 }
 
@@ -515,7 +477,7 @@ ul {
 
 .doiscard {
   flex: 1;
-  min-width: 400px;
+  min-width: 600px;
   max-width: 200px;
   background: var(--white);
   border-radius: 20px;
