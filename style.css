@@ -286,36 +286,12 @@ ul {
 }
 
 
-/* CONTAINER DO VÍDEO */
 
 .video-wrapper {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
 }
-
-
-/* BRILHO ATRÁS */
-
-.video-glow {
-  position: absolute;
-
-  width: 70%;
-  height: 70%;
-
-  top: 15%;
-  left: 15%;
-
-  background: rgba(146, 84, 225, 0.25);
-  filter: blur(90px);
-
-  border-radius: 50%;
-
-  z-index: 0;
-}
-
-
-/* CARD */
 
 .video-card {
   position: relative;
@@ -340,9 +316,6 @@ ul {
     box-shadow 0.4s ease;
 }
 
-
-/* EFEITO AO PASSAR O MOUSE */
-
 .video-card:hover {
   transform: translateY(-8px) scale(1.01);
 
@@ -351,21 +324,13 @@ ul {
     0 0 40px rgba(146, 84, 225, 0.25);
 }
 
-
-/* BARRA SUPERIOR */
-
 .video-top {
   height: 42px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 15px;
 }
-
-
-/* BOLINHAS */
 
 .video-dots {
   display: flex;
@@ -375,9 +340,7 @@ ul {
 .video-dots span {
   width: 9px;
   height: 9px;
-
   border-radius: 50%;
-
   background: rgba(255,255,255,0.5);
 }
 
@@ -652,4 +615,224 @@ ul {
 
 .footer-col ul li a:hover {
   color: var(--white);
+}
+
+/* SEÇÃO SOBRE */
+
+.sobre > h1 {
+  text-align: center;
+  font-family: Georgia, "Times New
+  Roman", serif;
+  font-size: clamp(32px, 5vw, 48px); 
+  color: var(--dark);
+  margin: 30px 0 20px;
+}
+
+.sobre-conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 6% 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 45px;
+  min-height: 215px;
+}
+
+.texto-sobre {
+  flex: 1; 
+  max-width: 420px; 
+}
+
+.texto-sobre p, .texto-detalhes p { 
+  font-size: 14px; 
+  line-height: 1.55; 
+  text-align: justify;
+
+}
+
+.imagem-sobre {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.imagem-sobre img { 
+  width: 100%; 
+  max-width: 350px; 
+  max-height: 260px;
+}
+
+.sobre-detalhes {
+  display: grid; 
+  grid-template-columns: 60% 40%; 
+  min-height: 300px; 
+  background: var(--ice);
+}
+
+.imagem-roupas {
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-roupas img { 
+  width: 100%; 
+  max-width: 520px; 
+  height: 230px; 
+  background: var(--white); 
+  border-radius: 25px; 
+}
+
+.texto-detalhes {
+  background: var(--violet);
+  color: var(--white);
+  padding: 45px 35px; 
+  display: flex;
+  align-items: center;
+}
+
+.texto-detalhes p { 
+  font-size: 13px;
+}
+/* SEÇÃO PLANOS */ 
+.planos { 
+  background: var(--plum); 
+  padding: 45px 3%; 
+  color: var(--plum); 
+}
+
+.planos h2 {
+  color: var(--white); 
+  font-family: var(--font-display); 
+  font-size: 40px; 
+  text-align: center; 
+  margin-bottom: 30px; 
+}
+
+.planos-container { 
+  display: grid; 
+  gap: 30px;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.plano {
+  background: var(-branco); 
+  border-radius: 26px; 
+  padding: 30px 25px 25px; 
+  display: flex; 
+  flex-direction: column; 
+  min-width: 0;
+}
+
+.plano h3 {
+  font-family: var(--font-display); 
+  font-style: italic; 
+  font-size: clamp(23px, 2.5vw, 34px); 
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.descricao { 
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 14px; 
+  line-height: 1.8; 
+  min-height: 75px; 
+  margin-bottom: 12px
+}
+plano ul { 
+  list-style: none; 
+  margin-bottom: 20px;
+}
+
+.plano li { 
+  font-size: 16px; 
+  font-weight: 600; 
+  margin-bottom: 2px;
+}
+.preco {
+  font-size: clamp(20px, 2.2vw, 28px); 
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-top: auto;
+  padding: 10px 0 25px;
+}
+
+.botao-plano {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  padding: 12px;
+  background: var(--plum);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* SEÇÃO CONTATOS */ 
+.contatos {
+  padding: 50px 5% 65px; 
+  background: var(--white);
+}
+.contatos h2 {
+  color: var(--dark);
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(45px, 7vw, 76px); 
+  margin-bottom: 25px;
+}
+
+.contatos-container {
+  max-width: 850px;
+  min-height: 180px;
+  margin: 0 auto;
+  padding: 18px 30px;
+  border-radius: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.redes-sociais { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px;
+} 
+.redes-sociais a {
+display: flex;
+align-items: center;
+gap: 20px;
+color: var(--white);
+text-decoration: none;
+font-size: clamp(14px, 2vw, 21px); 
+}
+
+.icone {
+  width: 25px; 
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 25px;
+
+}
+
+.fala-conosco { 
+  width: 140px;
+  height: 140px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+  font-family: var(--font-display);
 }
