@@ -550,6 +550,17 @@ ul {
   border: 1.5px solid rgba(64, 43, 71, 0.10);
 }
 
+.vmmcard {
+  flex: 1;
+  min-width: 400px;
+  max-width: 200px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  border: 1.5px solid rgba(64, 43, 71, 0.10);
+}
+
 .cadastro {
   background: linear-gradient(145deg, var(--navy) 0%, var(--plum) 100%);
   color: var(--white);
