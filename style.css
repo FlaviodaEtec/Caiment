@@ -487,7 +487,7 @@ ul {
 }
 
 .cadastro {
-  background: linear-gradient(145deg, var(--navy) 0%, var(--plum) 100%);
+  background: var(--ice);
   color: var(--white);
   text-align: center;
   position: relative;
@@ -496,7 +496,6 @@ ul {
 .cadastro .sparkle {
   color: var(--lime);
 }
-
 .cadastro-inner {
   position: relative;
   z-index: 1;
