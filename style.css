@@ -460,8 +460,8 @@ ul {
 
 .doiscard {
   flex: 1;
-  width: 900px;
-  height: 400px;
+  width: 1000px;
+  height: 300px;
   background: var(--white);
   border-radius: 20px;
   padding: 32px 24px;
@@ -470,16 +470,13 @@ ul {
 }
 
 .cadastro {
-  background: var(--ice);
+  background: var(--slate);
   color: var(--white);
   text-align: center;
   position: relative;
   border-radius: 100px
 }
 
-.cadastro .sparkle {
-  color: var(--lime);
-}
 .cadastro-inner {
   position: relative;
   z-index: 1;
@@ -490,7 +487,7 @@ ul {
 }
 
 .cadastro .section-title span {
-  color: var(--slate);
+  color: var(--white);
 }
 
 .cadastro-sub {
@@ -503,7 +500,7 @@ ul {
 }
 
 .footer {
-  background: var(--dark);
+  background: var(--slate);
   color: rgba(248, 246, 242, 0.5);
   padding: 2rem 0;
 }
@@ -723,62 +720,71 @@ ul {
   border-radius: 4px;
 }
 
-/* SEÇÃO CONTATOS */ 
+/* SEÇÃO CONTATOS */ /* SEÇÃO CONTATOS */
 .contatos {
-  padding: 50px 5% 65px; 
-  background: var(--white);
+    padding: 70px 5%;
+    background: var(--white);
 }
+
 .contatos h2 {
-  color: var(--dark);
-  text-align: center;
-  font-family: var(--font-display);
-  font-size: clamp(45px, 7vw, 76px); 
-  margin-bottom: 25px;
+    color: var(--dark);
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: clamp(40px, 6vw, 65px);
+    margin-bottom: 35px;
 }
 
 .contatos-container {
-  max-width: 850px;
-  min-height: 180px;
-  margin: 0 auto;
-  padding: 18px 30px;
-  border-radius: 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
+    max-width: 850px;
+    min-height: 180px;
+    margin: 0 auto;
+    padding: 35px 45px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    background: var(--plum);
 }
-.redes-sociais { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 15px;
-} 
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .redes-sociais a {
-display: flex;
-align-items: center;
-gap: 20px;
-color: var(--white);
-text-decoration: none;
-font-size: clamp(14px, 2vw, 21px); 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--white);
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: var(--lime);
 }
 
 .icone {
-  width: 25px; 
-  text-align: center; 
-  font-weight: bold; 
-  font-size: 25px;
-
+    width: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.fala-conosco { 
-  width: 140px;
-  height: 140px;
-  border: 1px solid;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: 23px;
-  font-family: var(--font-display);
+.fala-conosco {
+    width: 140px;
+    height: 140px;
+    border: 2px solid var(--lime);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: var(--font-display);
+    color: var(--white);
 }
