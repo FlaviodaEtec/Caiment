@@ -503,11 +503,11 @@ ul {
 }
 
 .cadastro .section-title {
-  color: var(--dark);
+  color: var(--navy);
 }
 
 .cadastro .section-title span {
-  color: var(--plum);
+  color: var(--slate);
 }
 
 .cadastro-sub {
