@@ -112,6 +112,15 @@ ul {
   border-radius: 2px;
 }
 
+
+.home {
+  background: var(--ice);
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  border-radius: 100px
+}
+
 .mascote-img {
   width: 800px;
   height: auto;
