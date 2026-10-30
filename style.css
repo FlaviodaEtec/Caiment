@@ -491,7 +491,7 @@ ul {
   color: var(--white);
   text-align: center;
   position: relative;
-  border-radius: 10px
+  border-radius: 100px
 }
 
 .cadastro .sparkle {
