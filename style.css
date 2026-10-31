@@ -747,7 +747,9 @@ ul {
     gap: 25px;
     max-width: 1250px;
     margin: auto;
-    background: var(--white);  
+    background: var(--white);
+    border: 2px solid var(--violet);
+    gap: 10px;
 }
 
 .plano {
@@ -895,8 +897,8 @@ ul {
 .card {
     width: 140px;
     min-height: 310px;
-    background: #edf5fa;
-    border: 2px solid #ddcaff;
+    background: var(--white);
+    border: 2px solid var(--violet);
     border-radius: 25px;
     padding: 18px 15px;
     display: flex;
