@@ -113,94 +113,197 @@ ul {
 }
 
 
+/* ===== NOVA HOME CAIMENT ===== */
+
 .home {
-  background: var(--ice);
-  color: var(--white);
-  text-align: center;
-  position: relative;
-  border-radius: 100px;
-  min-height: 500px
-}
-
-.mascote-img {
-  width: 800px;
-  height: auto;
-  display: block;
-  margin-right: 15%;
-}
-
-.hero {
-  min-height: 80vh;
+  min-height: 90vh;
+  padding: 130px 6% 60px;
   display: flex;
   align-items: center;
-  padding: 90px 40px 64px;
   position: relative;
-  background: var(--white);
+  overflow: hidden; 
+  background: linear-gradient(
+    120deg,
+    #c9e0eb 10%,
+    #eefcffa6 100%
+);
+  border-radius: 100px;
+  text-align: left;
 }
 
 .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  max-width: 1160px;
   width: 100%;
+  max-width: 1250px;
   margin: auto;
 }
 
 .hero-text {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
-  flex-direction: row-reverse;
-  margin-left: 200px;
-}
-
-.hero-title {
-  font-family: var(--font-display);
-  font-size: 64px;
-  font-weight: 900;
-  color: var(--dark);
-  margin-bottom: 12px;
+  gap: 40px;
+  width: 100%;
+  margin: 0;
 }
 
 .hero-content-text {
-  max-width: 520px;
+  max-width: 570px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
 }
 
-.hero-boneco {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-boneco img {
-  width: 600px;
-  height: auto;
-  transform-origin: bottom center;
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 6vw, 82px);
+  font-weight: 900;
+  line-height: 1.05;
+  color: var(--dark);
+  margin: 0 0 25px;
 }
 
 .hero-sub {
-  font-size: 16px;
-  font-weight: 300;
+  max-width: 480px;
+  font-size: 17px;
+  line-height: 1.8;
   color: var(--slate);
-  margin-bottom: 38px;
-  max-width: 400px;
+  margin-bottom: 30px;
+  font-family: var(--font-body)
+
 }
 
-.hero-cai {
-  font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--violet);
-  margin-bottom: -50px;
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  background: var(--violet);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(146, 84, 225, 0.22);
+  font-family: var(--font-body)
+}
+
+.hero-btn:hover {
+  background: var(--slate);
+  transform: translateY(-4px);
+}
+
+.hero-btn.secondary {
+  background: transparent;
+  color: #402b47;
+  border: 1.5px solid #9254e1;
+  box-shadow: none;
+}
+
+.hero-btn.secondary:hover {
+  background: #9254e1;
+  color: white;
+}
+
+.hero-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 35px;
+  color: #5f7898;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero-boneco {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+}
+
+.hero-boneco img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1060px;
+  height: auto;
+  object-fit: contain;
+  animation: bonecoFloat 4s ease-in-out infinite;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+  .home {
+      padding: 120px 25px 50px;
+      min-height: auto;
+  }
+
+  .hero-text {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+
+  .hero-content-text {
+      align-items: center;
+  }
+
+  .hero-title {
+      font-size: clamp(42px, 11vw, 60px);
+  }
+
+  .hero-sub {
+      font-size: 15px;
+  }
+
+  .hero-buttons {
+      justify-content: center;
+  }
+
+  .hero-info {
+      justify-content: center;
+      gap: 12px;
+  }
+
+  .hero-boneco {
+      width: 100%;
+      min-height: 330px;
+  }
+
+  .hero-boneco img {
+      max-width: 350px;
+  }
+
+  .hero-circle {
+      width: 270px;
+      height: 270px;
+  }
+
+  .floating-tag {
+      right: 0;
+      bottom: 25px;
+      font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-boneco img {
+      animation: none;
+  }
 }
 
 .butto {
