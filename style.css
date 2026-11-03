@@ -796,7 +796,7 @@ i {
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
     background: var(--ice);
-    min-height: 320px;
+    min-height: 720px;
     margin-bottom: 90px;
 }
 
